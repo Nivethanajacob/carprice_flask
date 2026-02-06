@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Price Prediction</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background:
+                linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 420px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #1f2937;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 1px solid #d1d5db;
+            font-size: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 15px;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 20px;
+            color: #16a34a;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Car Price Prediction</h2>
+
+    <form action="/predict" method="POST">
+
+        <input type="number" name="year" placeholder="Year of Manufacture" required>
+
+        <input type="number" step="0.1" name="present_price"
+               placeholder="Present Price (in Lakhs)" required>
+
+        <input type="number" name="kms_driven"
+               placeholder="Kilometers Driven" required>
+
+        <select name="fuel_type" required>
+            <option value="">Fuel Type</option>
+            <option>Petrol</option>
+            <option>Diesel</option>
+            <option>CNG</option>
+        </select>
+
+        <select name="seller_type" required>
+            <option value="">Seller Type</option>
+            <option>Dealer</option>
+            <option>Individual</option>
+        </select>
+
+        <select name="transmission" required>
+            <option value="">Transmission</option>
+            <option>Manual</option>
+            <option>Automatic</option>
+        </select>
+
+        <select name="owner" required>
+            <option value="">Owner</option>
+            <option value="0">First Owner</option>
+            <option value="1">Second Owner</option>
+            <option value="3">Third Owner</option>
+        </select>
+
+        <button type="submit">Predict Price</button>
+    </form>
+
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</div>
+
+</body>
+</html>
