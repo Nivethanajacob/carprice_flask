@@ -69,7 +69,7 @@ EDA was performed to understand data patterns and relationships.
 * Removing irrelevant columns
 * Train-test split
 
-## 🤖 Machine Learning Models Used
+## Machine Learning Models Used
 
 * Linear Regression
 
@@ -80,6 +80,10 @@ A Flask-based web application was developed where users can:
 * Enter car details
 * Submit the form
 * Get an estimated car price instantly
+
+## Car Price Prediction Web Application GIF
+
+
 
 ## How to Run the Project
 
