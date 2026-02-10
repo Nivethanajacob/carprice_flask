@@ -119,7 +119,9 @@ python app.py
 ```
 http://127.0.0.1:5000/
 ```
+## Output Deploy
 
+Model Deployment (Flask App):https://carpricepredict-flask.onrender.com
 
 ## Results
 
