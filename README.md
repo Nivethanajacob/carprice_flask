@@ -83,7 +83,7 @@ A Flask-based web application was developed where users can:
 
 ## Car Price Prediction Web Application GIF
 
-
+<img src="https://github.com/Nivethanajacob/carprice_flask/blob/main/static/image/GIF-ezgif.com-video-to-gif-converter.gif">
 
 ## How to Run the Project
 
