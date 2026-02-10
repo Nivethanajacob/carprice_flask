@@ -127,6 +127,3 @@ http://127.0.0.1:5000/
 * Identified important features affecting car prices
 * Successfully deployed ML model as a web application
 
-
-
-✨ *This project is ideal for academic submissions, resumes, and interviews.*
