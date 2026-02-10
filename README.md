@@ -73,6 +73,12 @@ EDA was performed to understand data patterns and relationships.
 
 * Linear Regression
 
+## Model Evaluation Metrics
+
+* R² Score
+* Mean Absolute Error (MAE)
+* Mean Squared Error (MSE)
+
 ## Web Application
 
 A Flask-based web application was developed where users can:
